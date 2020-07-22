@@ -15,8 +15,6 @@ Yes QGIS Server rocks!... But why?
 
 Paul Blottiere and Alessandro Pasotti
 
-QCooperative
-
 31-07-2020
 
 .. image:: images/qgis.png
@@ -71,7 +69,7 @@ QCooperative
 
 .. image:: images/qcooperative.png
     :class: centered
-    :width: 300
+    :width: 500
 
 
 .. class:: center
@@ -92,3 +90,98 @@ QGIS Desktop
 .. image:: images/desktop.png
     :class: centered
     :width: 600
+
+-----
+
+QGIS Server?
+============
+
++ Map server based on QGIS core library
++ Same release cycle with a **qgis-server** package
++ Numerous services:
+    + WMS 1.1.0 and WMS 1.3.0
+    + WFS 1.1 and OGC API Features (aka WFS3)
+    + WMTS
+    + WCS
+
+-----
+
+OGC certification
+=================
+
++ QGIS 3.10 is certified for WMS 1.3.0
++ Ongoing certification for OGC API Features
+
+.. image:: images/badge.png
+    :class: centered
+    :width: 200
+
+-----
+
+Configuration
+=============
+
++ QGIS Desktop acts like a WYSIWYG
+
+.. image:: images/config.png
+    :class: centered
+    :width: 800
+
+.. class:: center
+
+  **http://localhost/qgisserver?MAP=myproject.qgz**
+
+-----
+
+Vendor parameters and requests
+==============================
+
++ Extensions of OGC standards
++ Take full advantage of QGIS specificities
++ The most famous: **GetPrint**
+
+.. image:: images/getprint.jpg
+    :class: centered
+    :width: 600
+
+-----
+
+Programmability
+===============
+
+TODO
+
+-----
+
+Web client
+==========
+
+TODO
+
+-----
+
+Robustness
+==========
+
+TODO
+
+-----
+
+Documentation
+=============
+
+TODO
+
+-----
+
+Drawbacks
+=========
+
++ Performances
+
+-----
+
+Is it alive?
+============
+
+TODO
