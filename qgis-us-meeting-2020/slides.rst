@@ -2,6 +2,7 @@
 :skip-help: true
 :css: hovercraft-qcooperative-theme/css/custom-hov.css
 :css: hovercraft-qcooperative-theme/css/custom.css
+:css: custom.css
 
 .. title:: Yes QGIS Server rocks!... But why?
 
@@ -104,6 +105,10 @@ QGIS Server?
     + WMTS
     + WCS
 
+.. image:: images/wfs3.png
+    :class: centered
+    :width: 500
+
 -----
 
 OGC certification
@@ -149,7 +154,49 @@ Vendor parameters and requests
 Programmability
 ===============
 
-TODO
++ Python plugins
+
+  + Filtering
+  + Custom services (à la WMS)
+  + Custom API (à la OGCAPIF)
+
++ Hello world plugin: https://github.com/elpaso/qgis-helloserver
+
+.. image:: images/hw.png
+    :class: centered
+    :width: 400
+
+-----
+
+Robustness
+==========
+
++ Numerous unit tests
++ Continuous integration
++ Nightly OGC tests for WMS 1.3.0 and OGCAPIF on master
+
+.. image:: images/certif.png
+    :class: centered
+    :width: 800
+
+.. class:: center
+
+   http://test.qgis.org/ogc_cite/
+
+-----
+
+Docker images
+=============
+
++ OpenQuake (my favorite): https://hub.docker.com/r/openquake/qgis-server
++ Kartoza: https://registry.hub.docker.com/u/kartoza/qgis-server
++ C2C: https://hub.docker.com/r/camptocamp/qgis-server
++ Oslandia: https://gitlab.com/Oslandia/qgis/docker-qgis
++ and a lot more
+
+.. image:: images/docker.png
+    :class: centered
+    :width: 300
 
 -----
 
@@ -160,24 +207,27 @@ TODO
 
 -----
 
-Robustness
-==========
+Official resources
+==================
 
-TODO
++ `Documentation: QGIS as OGC Data Server <https://docs.qgis.org/3.10/en/docs/user_manual/working_with_ogc/server/index.html>`_
++ `Cookbook: QGIS Server and Python <https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/server.html>`_
++ `PyQGIS: QGIS ServerAPI <https://qgis.org/pyqgis/3.10/server/index.html>`_
 
------
-
-Documentation
-=============
-
-TODO
+.. image:: images/doc.png
+    :class: centered
+    :width: 600
 
 -----
 
 Drawbacks
 =========
 
++ No official logo
++ Documentation
 + Performances
++ Monitoring
++ Very few plugins https://plugins.qgis.org/plugins/server/
 
 -----
 
