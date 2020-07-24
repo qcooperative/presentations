@@ -16,6 +16,8 @@ Yes QGIS Server rocks!... But why?
 
 Paul Blottiere and Alessandro Pasotti
 
+QCooperative
+
 31-07-2020
 
 .. image:: images/qgis.png
@@ -38,7 +40,7 @@ Who?
 
 .. class:: center
 
-   **@pblottiere**
+   `@pblottiere <https://twitter.com/pblottiere>`_
 
 ----
 
@@ -56,7 +58,7 @@ Who?
 
 .. class:: center
 
-   **@elpaso66**
+   `@elpaso66 <https://twitter.com/elpaso66>`_
 
 -----
 
@@ -75,7 +77,7 @@ QCooperative
 
 .. class:: center
 
-  **@CooperativeQ**
+   `@CooperativeQ <https://twitter.com/CooperativeQ>`_
 
 -----
 
@@ -203,7 +205,13 @@ Docker images
 Web client
 ==========
 
-TODO
++ `Lizmap <https://www.3liz.com/en/lizmap.html>`_
++ `QWC2 <https://blog.sourcepole.ch/assets/2019/qwc2-foss4g19.pdf>`_
++ `G3W Suite <https://g3wsuite.it/en/g3w-suite-publish-qgis-projects/>`_
+
+.. image:: images/g3w.jpg
+    :class: centered
+    :width: 700
 
 -----
 
