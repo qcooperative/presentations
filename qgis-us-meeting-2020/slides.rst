@@ -38,7 +38,7 @@ Who?
     :class: centered
     :width: 200
 
-.. class:: center
+.. class:: centered
 
    `@pblottiere <https://twitter.com/pblottiere>`_
 
@@ -56,7 +56,7 @@ Who?
     :class: centered
     :width: 200
 
-.. class:: center
+.. class:: centered
 
    `@elpaso66 <https://twitter.com/elpaso66>`_
 
@@ -75,7 +75,7 @@ QCooperative
     :width: 500
 
 
-.. class:: center
+.. class:: centered
 
    `@CooperativeQ <https://twitter.com/CooperativeQ>`_
 
@@ -94,13 +94,34 @@ QGIS Desktop
     :class: centered
     :width: 600
 
------
+----
 
 QGIS Server?
 ============
 
 + Map server based on QGIS core library
-+ Same release cycle with a **qgis-server** package
++ Official repositories provide a **qgis-server** package
++ Same roadmap as QGIS Desktop
+
+.. image:: images/splash314.png
+    :class: centered
+    :width: 600
+
+----
+
+.. class:: chapter
+
+   Awesomeness
+
+.. image:: images/heart.png
+    :class: centered
+    :width: 200
+
+-----
+
+Services
+========
+
 + Numerous services:
     + WMS 1.1.0 and WMS 1.3.0
     + WFS 1.1 and OGC API Features (aka WFS3)
@@ -110,6 +131,19 @@ QGIS Server?
 .. image:: images/wfs3.png
     :class: centered
     :width: 500
+
+-----
+
+Vendor parameters and requests
+==============================
+
++ Extensions of OGC standards
++ Take full advantage of QGIS specificities
++ The most famous: **GetPrint**
+
+.. image:: images/getprint.jpg
+    :class: centered
+    :width: 600
 
 -----
 
@@ -134,22 +168,9 @@ Configuration
     :class: centered
     :width: 800
 
-.. class:: center
+.. class:: centered
 
   **http://localhost/qgisserver?MAP=myproject.qgz**
-
------
-
-Vendor parameters and requests
-==============================
-
-+ Extensions of OGC standards
-+ Take full advantage of QGIS specificities
-+ The most famous: **GetPrint**
-
-.. image:: images/getprint.jpg
-    :class: centered
-    :width: 600
 
 -----
 
@@ -181,7 +202,7 @@ Robustness
     :class: centered
     :width: 800
 
-.. class:: center
+.. class:: centered
 
    http://test.qgis.org/ogc_cite/
 
@@ -215,16 +236,27 @@ Web client
 
 -----
 
-Official resources
-==================
+Resources
+=========
 
 + `Documentation: QGIS as OGC Data Server <https://docs.qgis.org/3.10/en/docs/user_manual/working_with_ogc/server/index.html>`_
 + `Cookbook: QGIS Server and Python <https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/server.html>`_
 + `PyQGIS: QGIS ServerAPI <https://qgis.org/pyqgis/3.10/server/index.html>`_
++ `Workshop: QGIS Server With Python Superpowers <http://itopen.it/bulk/FOSS4G-IT-2020>`_
 
 .. image:: images/doc.png
     :class: centered
     :width: 600
+
+-----
+
+.. class:: chapter
+
+   Drawbacks
+
+.. image:: images/broken.png
+    :class: centered
+    :width: 200
 
 -----
 
@@ -236,6 +268,16 @@ Drawbacks
 + Performances
 + Monitoring
 + Very few plugins https://plugins.qgis.org/plugins/server/
+
+----
+
+.. class:: chapter
+
+   WIP
+
+.. image:: images/fixed.png
+    :class: centered
+    :width: 200
 
 -----
 
