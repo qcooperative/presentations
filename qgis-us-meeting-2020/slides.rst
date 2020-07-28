@@ -260,14 +260,47 @@ Resources
 
 -----
 
-Drawbacks
-=========
+Visibility
+==========
 
 + No official logo
-+ Documentation
-+ Performances
-+ Monitoring
-+ Very few plugins https://plugins.qgis.org/plugins/server/
++ Buried documentation
+
+.. image:: images/doc2.png
+    :class: centered
+    :width: 400
+
+----
+
+Performances
+============
+
++ Same rendering engine
++ All QGIS Desktop features are not server friendly
+
+.. image:: images/perf.png
+    :class: centered
+    :width: 600
+
+.. class:: centered
+
+   `QGIS 3 and performance analysis <https://oslandia.com/2019/06/21/qgis-3-and-performance-analysis/>`_
+
+----
+
+Ecosystem
+=========
+
++ QGIS Desktop plugins: ~1250
++ QGIS Server plugins: 11
+
+.. image:: images/plugins.png
+    :class: centered
+    :width: 1000
+
+.. class:: centered
+
+  https://plugins.qgis.org/plugins/server/
 
 ----
 
@@ -281,7 +314,48 @@ Drawbacks
 
 -----
 
-Is it alive?
+Documentation
+=============
+
++ A `QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/184>`_ has been funded by QGIS.org to:
+
+  + Improve the documentation
+  + Add a dedicated page for QGIS Server
+
+.. image:: images/phare.jpeg
+    :class: centered
+    :width: 600
+
+-----
+
+Performances
 ============
 
-TODO
++ Monitoring to avoid regressions
++ `Another QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/185>`_ has been funded by QGIS.org
+
+.. image:: images/graffiti2.png
+    :class: centered
+    :width: 500
+
+.. class:: centered
+
+   http://test.qgis.org/perf_test/graffiti/
+
+-----
+
+Catalog plugin
+==============
+
++ Currently under development
+
+.. image:: images/catalog.gif
+    :class: centered
+    :width: 800
+
+-----
+
+.. class:: chapter
+
+   Thanks!
+
