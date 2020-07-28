@@ -1,9 +1,3 @@
 # QGIS US Meeting 2020
 
-``` bash
-$ git submodule update --init
-$ virtualenv venv
-$ source venv/bin/activate
-(venv) $ pip install hovercraft
-(venv) $ hovercraft -c $(pwd)/custom.css slides.rst
-```
+Online presentation is [here](https://raw.githack.com/qcooperative/presentations/master/qgis-us-meeting-2020/build/index.html).
