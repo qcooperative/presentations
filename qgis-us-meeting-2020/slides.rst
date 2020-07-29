@@ -47,7 +47,7 @@ Who?
 Who?
 ====
 
-+ Alessandro Passoti
++ Alessandro Pasotti
     + itOpen
     + QGIS developer and vice chair of QGIS.org PSC
     + QCooperative member
@@ -223,9 +223,10 @@ Docker images
 
 -----
 
-Web client
-==========
+Web clients
+===========
 
++ Simple integrated web client for WFS3
 + `Lizmap <https://www.3liz.com/en/lizmap.html>`_
 + `QWC2 <https://blog.sourcepole.ch/assets/2019/qwc2-foss4g19.pdf>`_
 + `G3W Suite <https://g3wsuite.it/en/g3w-suite-publish-qgis-projects/>`_
@@ -276,7 +277,7 @@ Performances
 ============
 
 + Same rendering engine
-+ All QGIS Desktop features are not server friendly
++ Not all QGIS Desktop features are server friendly
 
 .. image:: images/perf.png
     :class: centered
