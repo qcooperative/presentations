@@ -134,12 +134,29 @@ Services
 
 -----
 
-Vendor parameters and requests
+Extensions of OGC standards
+===========================
+
++ Vendor parameters and requests
++ Take full advantage of QGIS specificities
++ Some examples:
+
+  + **GetFeature** and **EXP_FILTER**
+  + **GetMap** and **HIGHLIGHT_GEOM**
+
+.. image:: images/redlining.png
+    :class: centered
+    :width: 500
+
+-----
+
+Extensions of OGC standards II
 ==============================
 
-+ Extensions of OGC standards
-+ Take full advantage of QGIS specificities
 + The most famous: **GetPrint**
+
+  + template selection
+  + atlas
 
 .. image:: images/getprint.jpg
     :class: centered
@@ -251,6 +268,15 @@ Resources
 
 -----
 
+Community
+=========
+
+.. image:: images/team.jpeg
+    :class: centered
+    :width: 700
+
+-----
+
 .. class:: chapter
 
    Drawbacks
@@ -305,6 +331,20 @@ Ecosystem
 
 ----
 
+Out-of-the box experience
+=========================
+
++ No administration panel
++ No monitoring panel
++ No landing page (except for OGCAPIF)
++ Not so sexy exception page
+
+.. image:: images/error.png
+    :class: centered
+    :width: 800
+
+----
+
 .. class:: chapter
 
    WIP
@@ -342,6 +382,19 @@ Performances
 .. class:: centered
 
    http://test.qgis.org/perf_test/graffiti/
+
+-----
+
+Monitoring
+==========
+
++ Big infrastructure
++ Currently under discussion
++ On the fly configuration?
+
+.. image:: images/pulse.png
+    :class: centered
+    :width: 500
 
 -----
 
