@@ -26,6 +26,21 @@ QCooperative
 
 ----
 
+Where?
+======
+
++ On the QCooperative GitHub
+
+.. image:: images/github.png
+    :class: centered
+    :width: 600
+
+.. class:: centered
+
+  https://github.com/qcooperative/presentations/tree/master/qgis-us-meeting-2020
+
+----
+
 Who?
 ====
 
