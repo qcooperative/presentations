@@ -80,7 +80,7 @@ Who?
 QCooperative
 ============
 
-+ Broad range of services
++ Broad range of services in GIS
 + Open Source ethics
 + International
 + Active members of the QGIS community
