@@ -206,20 +206,41 @@ Configuration
 
 -----
 
-Programmability
-===============
+Python plugins
+==============
 
-+ Python plugins
-
-  + Filtering
-  + Custom services (à la WMS)
-  + Custom API (à la OGCAPIF)
++ Filtering
++ Custom services (à la WMS)
++ Custom API (à la OGCAPIF)
 
 + Hello world plugin: https://github.com/elpaso/qgis-helloserver
 
 .. image:: images/hw.png
     :class: centered
     :width: 400
+
+-----
+
+Usability
+=========
+
++ FCGI process
++ Standalone or embedded
+
+.. code:: python
+
+  server = QgsServer()
+  request = QgsBufferServerRequest(
+      'http://localhost:8081/?'
+      'SERVICE=WMS&REQUEST=GetCapabilities'
+  )
+
+  response = QgsBufferServerResponse()
+  server.handleRequest(request, response)
+
+.. class:: centered
+
+   https://github.com/qgis/QGIS/blob/master/tests/src/python/qgis_wrapped_server.py
 
 -----
 
