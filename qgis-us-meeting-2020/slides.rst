@@ -80,7 +80,7 @@ Who?
 QCooperative
 ============
 
-+ Broad range of services in GIS
++ Broad range of GIS services
 + Open Source ethics
 + International
 + Active members of the QGIS community
@@ -183,7 +183,7 @@ OGC certification
 =================
 
 + QGIS 3.10 is certified for WMS 1.3.0
-+ Ongoing certification for OGC API Features
++ Ongoing certification for OGC API Features (WFS3)
 
 .. image:: images/badge.png
     :class: centered
@@ -214,6 +214,7 @@ Python plugins
 + Custom API (à la OGCAPIF)
 
 + Hello world plugin: https://github.com/elpaso/qgis-helloserver
++ Lot of examples: https://github.com/elpaso/qgis3-server-vagrant/tree/master/resources/web/plugins
 
 .. image:: images/hw.png
     :class: centered
@@ -225,7 +226,8 @@ Usability
 =========
 
 + FCGI process
-+ Standalone or embedded
++ Python (standalone or embedded)
++ Development server
 
 .. code:: python
 
@@ -247,7 +249,7 @@ Usability
 Robustness
 ==========
 
-+ Numerous unit tests
++ Pretty good unit test coverage
 + Continuous integration
 + Nightly OGC tests for WMS 1.3.0 and OGCAPIF on master
 
