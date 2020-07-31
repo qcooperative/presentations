@@ -222,8 +222,8 @@ Python plugins
 
 -----
 
-Usability
-=========
+Usage
+=====
 
 + FCGI process
 + Python (standalone or embedded)
