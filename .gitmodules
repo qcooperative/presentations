@@ -1,3 +1,6 @@
 [submodule "qgis-us-meeting-2020/hovercraft-qcooperative-theme"]
 	path = qgis-us-meeting-2020/hovercraft-qcooperative-theme
 	url = https://github.com/qcooperative/hovercraft-qcooperative-theme
+[submodule "qgis-swiss-meeting-2020/hovercraft-qcooperative-theme"]
+	path = qgis-swiss-meeting-2020/hovercraft-qcooperative-theme
+	url = https://github.com/qcooperative/hovercraft-qcooperative-theme
