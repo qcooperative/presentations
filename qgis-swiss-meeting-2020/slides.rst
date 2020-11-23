@@ -200,8 +200,8 @@ QGIS-Server-PerfSuite improvements
 
 -----
 
-WMS with Time dimension
-=======================
+WMS with Time dimension for rasters
+===================================
 
 + QEP `#195 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/195>`_ by Alessandro Pasotti (`QCooperative <https://www.qcooperative.net/>`_)
 
@@ -215,7 +215,7 @@ WMS with Time dimension
 
 .. class:: centered
 
-   `SERVICE=WMS&REQUEST=GetMap&TIME= <https://localhost>`_
+   `SERVICE=WMS&REQUEST=GetMap&LAYER=myraster&TIME= <https://localhost>`_
 
 -----
 
@@ -237,7 +237,7 @@ Shared cache
 On the fly configuration
 ========================
 
-+ QEP `#190 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/190>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
++ QEP `#190 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/190>`_
 
 + How to configure QGIS Server instances on-the-fly (without restarting)?
 + Needs:
