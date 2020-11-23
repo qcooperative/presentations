@@ -258,7 +258,33 @@ Monitoring
 
 + QEP `#193 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/193>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
 
-TODO
++ Get an insight of the state of QGIS server
++ Handling several QGIS Server instances
+
+.. image:: images/archi.png
+    :class: centered
+    :width: 1000
+
+-----
+
+Monitoring - POC
+================
+
+|
+|
+
+.. image:: images/poc.png
+    :class: centered
+    :width: 1500
+
+-----
+
+Monitoring - POC
+================
+
+.. image:: images/grafana.png
+    :class: centered
+    :width: 1000
 
 -----
 
