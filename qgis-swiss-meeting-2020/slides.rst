@@ -105,8 +105,8 @@ Improve QGIS project loading time
 
 + QEP `#191 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/191>`_ by René-Luc D'Hont and David Marteau (`3Liz <https://www.3liz.com/>`_)
 + Achievements:
-    + improve the trust mechanism
-    + new environment variable to disable layouts
+    + Improve the trust mechanism
+    + New environment variable to disable layouts
 
 .. image:: images/wip.png
     :class: centered
@@ -120,9 +120,21 @@ Documentation
 + QEP `#184 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/184>`_ by Julien Cabieces and Benoit de Mezzo (`Oslandia <https://oslandia.com/>`_)
 + Achievements:
     + https://docs.qgis.org/3.16/en/docs/server_manual/index.html
-    + improve completeness and add new contents (deployment, ...)
+    + Improve completeness and add new contents (deployment, ...)
 
 .. image:: images/doc.png
+    :class: centered
+    :width: 800
+
+-----
+
+End user experience
+===================
+
++ QEP `#192 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/192>`_ by Alessandro Pasotti (`QCooperative <https://www.qcooperative.net/>`_)
++ Simple project catalog and webgis browser out-of the box
+
+.. image:: images/catalog.gif
     :class: centered
     :width: 800
 
@@ -133,8 +145,8 @@ Continuous integration and OGC certification
 
 + QEP `#175 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/175>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
 + Achievements:
-    + Python tool to run OGC tests for WMS 1.3.0 in command line
-    + integrated in QGIS continuous integration mechanism to avoid regressions
+    + `pyogctest <https://github.com/pblottiere/pyogctest>`_: Python tool to run OGC tests for WMS 1.3.0 in command line
+    + Integrated in QGIS continuous integration mechanism to avoid regressions
 
 .. image:: images/ci.png
     :class: centered
@@ -191,7 +203,7 @@ QGIS-Server-PerfSuite improvements
 WMS with Time dimension
 =======================
 
-+ QEP `#195 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/195>`_ by Alessandro Pasotti (QCooperative)
++ QEP `#195 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/195>`_ by Alessandro Pasotti (`QCooperative <https://www.qcooperative.net/>`_)
 
 + Goal
 
@@ -207,23 +219,44 @@ WMS with Time dimension
 
 -----
 
-Monitoring
-==========
-
-+ QEP https://github.com/qgis/QGIS-Enhancement-Proposals/issues/193
-+ /me (QCooperative)
-
------
-
 Shared cache
 ============
 
-+ Alessandro Pasotti (QCooperative) and /me (QCooperative)
++ QEP `#??? <http://localhost>`_ by Alessandro Pasotti and /me (`QCooperative <https://www.qcooperative.net/>`_)
+
++ Cloud environment with multiple QGIS Server instances
++ Reduce startup time by sharing information between processes
++ A long standing discussion
+
+.. image:: images/penseur.jpeg
+    :class: centered
+    :width: 250
 
 -----
 
 On the fly configuration
 ========================
+
++ QEP `#190 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/190>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
+
++ How to configure QGIS Server instances on-the-fly (without restarting)?
++ Needs:
+
+  + Reload a project
+  + Deactivate/reload a plugin
+  + Update the configuration
+  + ...
+
+.. class:: centered
+
+   Avoid restarting the whole infrastructure (may be long/improve uptime)!
+
+-----
+
+Monitoring
+==========
+
++ QEP `#193 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/193>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
 
 TODO
 
@@ -236,4 +269,3 @@ TODO
 .. image:: images/christmas.png
     :class: centered
     :width: 600
-
