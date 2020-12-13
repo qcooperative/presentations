@@ -1,0 +1,17 @@
+.chapter {
+    text-align: center;
+    font-size: 3.0em;
+    padding-top: 10%;
+    font-weight: bold;
+}
+
+.highlight  {
+    font-size: 1em;
+    background: #353b43;
+    padding: 1em;
+}
+
+tt {
+    background: #353b43;
+    padding: 0.15em;
+}
