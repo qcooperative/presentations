@@ -4,6 +4,9 @@
 :css: hovercraft-qcooperative-theme/css/custom.css
 :css: custom.css
 
+.. |twitter| image:: images/twitter.png
+  :width: 30
+
 .. title:: QGIS Server: Présent et Futur
 
 ----
@@ -31,7 +34,7 @@ Qui?
 
 + Paul Blottiere
     + Lead Dev à Hytech Imaging
-    + Développeur QGIS core et serveur
+    + Développeur QGIS core et server
     + Membre de la QCooperative
 
 .. image:: images/pblottiere.png
@@ -40,7 +43,7 @@ Qui?
 
 .. class:: centered
 
-   `@pblottiere <https://twitter.com/pblottiere>`_
+   |twitter| `@pblottiere <https://twitter.com/pblottiere>`_
 
 ----
 
@@ -59,7 +62,7 @@ QCooperative
 
 .. class:: centered
 
-   `@CooperativeQ <https://twitter.com/CooperativeQ>`_
+   |twitter| `@CooperativeQ <https://twitter.com/CooperativeQ>`_
 
 ----
 
@@ -101,10 +104,16 @@ Quoi?
 
 -----
 
-3.10: Dimension WMS
-===================
+3.10: Dimensions et WMS
+=======================
 
 + René-Luc D'Hont (**3Liz**)
++ Couche vectorielle
++ Exemple: ``&TIME=2020``
+
+.. image:: images/config.png
+    :class: centered
+    :width: 800
 
 -----
 
@@ -112,11 +121,12 @@ Quoi?
 =================================
 
 + Alessandro Pasotti (dev) et /me (OGC) (**QCooperative**)
-+ Achievements:
++ JSON et OpenAPI
++ ``http://qgisserver/wfs3/collections.json?MAP=myproject.qgz``
 
-.. image:: images/wip.png
+.. image:: images/wfs3certif.png
     :class: centered
-    :width: 200
+    :width: 800
 
 -----
 
@@ -188,13 +198,13 @@ Quoi?
 3.16: Monitoring de performances
 ================================
 
-+ QEP **#185** by /me (**QCooperative**)
++ QEP **#185** par /me (**QCooperative**)
 + Réalisations:
     + Nouveaux scénarios
     + Détection d'anomalies
     + Mise à jour des versions
 
-+ Résultats préliminaires: QGIS 3.X est plus rapide que QGIS 2.18 dans la plupart des cas
++ Résultats préliminaires: QGIS 3 est plus rapide que QGIS 2 dans la plupart des cas
 
 .. image:: images/perf_polygons.png
     :class: centered
