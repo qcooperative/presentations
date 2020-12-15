@@ -199,10 +199,9 @@ Quoi?
 ================================
 
 + QEP **#185** par /me (**QCooperative**)
-+ Réalisations:
-    + Nouveaux scénarios
-    + Détection d'anomalies
-    + Mise à jour des versions
++ Nouveaux scénarios
++ Détection d'anomalies
++ Mise à jour des versions
 
 + Résultats préliminaires: QGIS 3 est plus rapide que QGIS 2 dans la plupart des cas
 
@@ -222,18 +221,19 @@ Quoi?
 
 -----
 
-QGIS-Server-PerfSuite improvements
-==================================
+QGIS-Server-PerfSuite
+=====================
 
-+ Marco Bernasocchi (`OPENGIS.ch <https://www.opengis.ch/>`_) and /me (`QCooperative <https://www.qcooperative.net/>`_)
++ /me (**QCooperative**)
++ Encore de nouveaux scenarios:
 
-+ A lot of new scenarios
+  + Temps de chargement de gros projets
+  + Moteur de rendu catégorisé et par règles
+  + ``GetMap`` avec taille d'image plus importante (TODO)
+  + ``GetFeatureInfo`` (TODO)
++ Et plus encore :)
 
-  + GetFeatureInfo
-  + Bigger images and larger project
-  + Categorised and rule based renderer
-
-+ A report with "tips and tricks" to improve performances will come in time
++ Objectif: un rapport de trucs et astuces pour optimiser la configuration d'un projet
 
 .. image:: images/increase2.png
     :class: centered
@@ -244,13 +244,11 @@ QGIS-Server-PerfSuite improvements
 Dimension temporelle WMS pour rasters
 =====================================
 
-+ QEP `#195 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/195>`_ by Alessandro Pasotti (`QCooperative <https://www.qcooperative.net/>`_)
++ QEP **#195** par Alessandro Pasotti (**QCooperative**)
 
-+ Goal
-
-  + Expose several individual layers as a single temporally enabled layer
-  + In compliance with the "OGC Best Practice for using Web Map Services (WMS) with Time-Dependent or Elevation-Dependent Data" document
-  + For GetCapabilities and GetMap requests
++ Exposer plusieurs couches rasters comme une seule
++ En conformité avec *OGC Best Practice for using Web Map Services (WMS) with Time-Dependent or Elevation-Dependent Data*
++ Pour les requêtes ``GetCapabilities`` et ``GetMap``
 
 |
 
@@ -263,11 +261,11 @@ Dimension temporelle WMS pour rasters
 Cache partagé
 =============
 
-+ QEP `#??? <http://localhost>`_ by Alessandro Pasotti and /me (`QCooperative <https://www.qcooperative.net/>`_)
++ QEP **#TODO** par Alessandro Pasotti and /me (**QCooperative**)
 
-+ Cloud environment with multiple QGIS Server instances
-+ Reduce startup time by sharing information between processes
-+ A long standing discussion
++ Environnement cloud avec plusieurs (beaucoup d') instances de QGIS Server
++ Réduire le temps de mise en service (démarrage, lecture projet et ``GetCapabilities``)
++ Une discussion de longue date
 
 .. image:: images/penseur.jpeg
     :class: centered
@@ -278,29 +276,30 @@ Cache partagé
 Configuration à la volée
 ========================
 
-+ QEP `#190 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/190>`_
++ QEP **#190**
 
-+ How to configure QGIS Server instances on-the-fly (without restarting)?
-+ Needs:
++ Comment configurer des instances de QGIS Server à chaud?
++ Idées:
 
-  + Reload a project
-  + Deactivate/reload a plugin
-  + Update the configuration
+  + Recharger un projet
+  + Désactiver/recharger un plugin
+  + Mise à jour des paramètres de configuration
   + ...
+
+|
 
 .. class:: centered
 
-   Avoid restarting the whole infrastructure (may be long/improve uptime)!
+   *Éviter de redémarrer toute une infrastructure pour un changement mineur!*
 
 -----
 
 Monitoring
 ==========
 
-+ QEP `#193 <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/193>`_ by /me (`QCooperative <https://www.qcooperative.net/>`_)
-
-+ Get an insight of the state of QGIS server
-+ Handling several QGIS Server instances
++ QEP **#193** par /me (**QCooperative**)
++ Obtenir des informations sur l'état interne de QGIS Server
++ Passage à l'échelle
 
 .. image:: images/archi.png
     :class: centered
@@ -331,7 +330,7 @@ Monitoring - POC
 
 .. class:: chapter
 
-   Thanks
+   Merci
 
 .. image:: images/christmas.png
     :class: centered
