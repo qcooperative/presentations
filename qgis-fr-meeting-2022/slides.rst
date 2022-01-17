@@ -13,8 +13,8 @@
 
 :id: presentation-title
 
-QGIS Server, le choix de la simplicité
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+QGIS Server, le choix de la simplicité?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Paul Blottiere
 
@@ -68,7 +68,11 @@ QCooperative
 Hytech-Imaging
 ==============
 
-+ TODO
++ Objectif: développer les usages de l'imagerie spectrale
+
+  + Services d'acquisition (aéroportés, drones, ...)
+  + Extraction d'informations
+  + Infra de traitements
 
 .. image:: images/hti.jpg
     :class: centered
@@ -84,9 +88,9 @@ Hytech-Imaging
 Quoi?
 =====
 
-+ Serveur de cartographie: c'est pas si compliqué
-+ QGIS Server: simple ou pas simple?
-+ Stack de déploiement: ???
++ Serveur de cartographie
++ QGIS Server
++ Déploiement
 
 .. image:: images/compass.jpg
     :class: centered
@@ -94,8 +98,8 @@ Quoi?
 
 -----
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 :data-transition-duration: 0
 
@@ -107,8 +111,8 @@ Serveur de cartographie: c'est pas si compliqué
 
 :data-transition-duration: 0
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 .. image:: images/mapserver_distrib.png
     :class: centered
@@ -118,8 +122,8 @@ Serveur de cartographie: c'est pas si compliqué
 
 :data-transition-duration: 0
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 .. image:: images/mapserver_update.png
     :class: centered
@@ -129,8 +133,8 @@ Serveur de cartographie: c'est pas si compliqué
 
 :data-transition-duration: 0
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 .. image:: images/mapserver_interop.png
     :class: centered
@@ -140,8 +144,8 @@ Serveur de cartographie: c'est pas si compliqué
 
 :data-transition-duration: 0
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 .. image:: images/mapserver_full.png
     :class: centered
@@ -149,8 +153,8 @@ Serveur de cartographie: c'est pas si compliqué
 
 -----
 
-Serveur de cartographie: c'est pas si compliqué
-===============================================
+Serveur de cartographie
+=======================
 
 + Standards OGC (Open Geospatial Consortium)
 
@@ -163,20 +167,18 @@ Serveur de cartographie: c'est pas si compliqué
 
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
 + Un serveur de cartographie
 
   + qui respecte les standards OGC (certifié WMS)
   + basé sur le moteur de rendu de QGIS Desktop
 
-
-
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
 + Ses camarades open-source
 
@@ -194,11 +196,13 @@ QGIS Server: simple ou pas simple?
 
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
-+ WYSIWYG (What You See Is What You Get)
-+ Le projet .qgs/.qgz est LE fichier de configuration
++ Simplicité de configuration
+
+  + WYSIWYG (What You See Is What You Get)
+  + Le projet .qgs/.qgz est LE fichier de configuration
 
 .. image:: images/config.png
     :class: centered
@@ -206,23 +210,21 @@ QGIS Server: simple ou pas simple?
 
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
-+ Capacité à personaliser les rendus
++ Simplicité de personalisation
 
   + Plugins Python (PyQGIS)
   + https://plugins.qgis.org/plugins/server/
   + https://docs.qgis.org/3.16/fr/docs/pyqgis_developer_cookbook/server.html
 
-TODO
-
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
-+ Extensions aux services et paramètres standards OGC
++ De nombreuses extensions aux services et paramètres standards OGC
 + Exemple: ``GetPrint``
 
   + Génération de rapport (PDF, JPG, ...)
@@ -230,8 +232,8 @@ QGIS Server: simple ou pas simple?
 
 -----
 
-QGIS Server: simple ou pas simple?
-==================================
+QGIS Server
+===========
 
 + De nombreuses solutions clientes sur étagère
 
@@ -239,19 +241,30 @@ QGIS Server: simple ou pas simple?
   + QWC2
   + G3W-Suite
 
-TODO
+.. image:: images/lizmap.jpg
+    :class: centered
+    :width: 1200
 
 -----
 
-Déploiement: une stack simple
-=============================
+Déploiement
+===========
 
 + Conteneurisation
 
   + Solution simple de déploiement
   + De nombreuses images Docker disponibles pour QGIS Server
-  + https://hub.docker.com/r/openquake/qgis-server
-  + ``docker run -p 8010:80 openquake/qgis-server:ltr``
+
+|
+
+.. class:: centered
+
+  ``docker run -p 8010:80 openquake/qgis-server:ltr``
+
+-----
+
+Déploiement
+===========
 
 + Orchestration
 
@@ -262,8 +275,8 @@ Déploiement: une stack simple
 
 -----
 
-Déploiement: une stack simple
-=============================
+Déploiement
+===========
 
 + Équilibrage de charge
 
@@ -277,12 +290,12 @@ Déploiement: une stack simple
 
 -----
 
-Déploiement: une stack simple
-=============================
+Déploiement
+===========
 
 + Cache?
 
-  + Ne pas activer le moteur de rendu plusieurs pour la même chose
+  + Ne pas activer le moteur de rendu plusieurs fois pour la même chose
   + WMS: retourne une image sauvée sur le disque
   + Map-Proxy (Docker image)
 
@@ -292,14 +305,32 @@ Déploiement: une stack simple
 
 -----
 
-Déploiement: une stack simple
-=============================
+Déploiement
+===========
 
 + Pour résumer
 
   + Composition de conteneurs Dockers avec ``docker-compose``
   + Client -> ``MapProxy`` (cache) -> ``NGINX`` (load-balancer) -> N ``QGIS Server`` (scaling)
-  + https://github.com/pblottiere/qgis-server-stack (avec ``mviewer`` en client web)
+  + Bac à sable de test avec ``mviewer`` en client web:
+
+|
+
+.. class:: centered
+
+  https://github.com/pblottiere/qgis-server-stack
+
+-----
+
+Déploiement
+===========
+
++ Configuration insurmontable?
+
+  + ``docker-compose.yml``: 30 lignes
+  + ``mapproxy/mapproxy.yml``: 30 lignes
+  + ``nginx-load-balancer.conf``: 15 lignes
+  + ``mviewer/default.xml``: 20 lignes
 
 |
 
@@ -309,8 +340,8 @@ Déploiement: une stack simple
 
 -----
 
-Déploiement: une stack simple
-=============================
+Déploiement
+===========
 
 + Scaling: ``qgis-server-stack-qgisserver-1`` et ``qgis-server-stack-qgisserver-2``
 + Cache: ``mapproxy/cache_data/countries_cache_EPSG3857``
