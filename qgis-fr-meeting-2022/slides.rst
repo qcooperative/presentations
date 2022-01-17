@@ -161,3 +161,83 @@ Serveur de cartographie
     :class: centered
     :width: 1000
 
+-----
+
+QGIS Server
+===========
+
++ Un serveur de cartographie
+
+  + qui respecte les standards OGC (certifié WMS)
+  + basé sur le moteur de rendu de QGIS Desktop
+
+
+
+-----
+
+QGIS Server
+===========
+
++ Ses camarades open-source
+
+.. image:: images/mapservers.png
+    :class: centered
+    :width: 1200
+
++ QGIS Server est-il *"mieux"*?
+
+  + Non!
+
++ QGIS Server est-il *"plus simple"*?
+
+  + Oui sur certains apsects
+
+-----
+
+QGIS Server
+===========
+
++ WYSIWYG (What You See Is What You Get)
+
+.. image:: images/config.png
+    :class: centered
+    :width: 1200
+
+-----
+
+QGIS Server
+===========
+
++ Capacité à personaliser les rendus
+
+  + Plugins Python (PyQGIS)
+  + https://plugins.qgis.org/plugins/server/
+  + https://docs.qgis.org/3.16/fr/docs/pyqgis_developer_cookbook/server.html
+
+TODO
+
+-----
+
+QGIS Server
+===========
+
++ Extensions aux services et paramètres standards OGC
++ Exemple: ``GetPrint``
+
+  + Génération de rapport (PDF, JPG, ...)
+  + Basé sur le layout manager de QGIS Desktop (encore du WYSIWYG)
+
+-----
+
+QGIS Server
+===========
+
++ De nombreuses solutions clientes sur étagère
+
+  + Lizmap
+  + QWC2
+  + G3W-Suite
+
+TODO
+
+
