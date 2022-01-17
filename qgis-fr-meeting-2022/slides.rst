@@ -84,10 +84,9 @@ Hytech-Imaging
 Quoi?
 =====
 
-+ Serveur de cartographie
-+ Standard OGC
-+ QGIS Server
-+ Déploiement
++ Serveur de cartographie: c'est pas si compliqué
++ QGIS Server: simple ou pas simple?
++ Stack de déploiement: exemple
 
 .. image:: images/compass.jpg
     :class: centered
@@ -98,11 +97,15 @@ Quoi?
 Serveur de cartographie
 =======================
 
+:data-transition-duration: 0
+
 .. image:: images/mapserver.png
     :class: centered
     :width: 1000
 
 -----
+
+:data-transition-duration: 0
 
 Serveur de cartographie
 =======================
@@ -113,6 +116,8 @@ Serveur de cartographie
 
 -----
 
+:data-transition-duration: 0
+
 Serveur de cartographie
 =======================
 
@@ -121,6 +126,8 @@ Serveur de cartographie
     :width: 1000
 
 -----
+
+:data-transition-duration: 0
 
 Serveur de cartographie
 =======================
@@ -131,6 +138,8 @@ Serveur de cartographie
 
 -----
 
+:data-transition-duration: 0
+
 Serveur de cartographie
 =======================
 
@@ -140,5 +149,15 @@ Serveur de cartographie
 
 -----
 
-Standards OGC
-=============
+Serveur de cartographie
+=======================
+
++ Standards OGC (Open Geospatial Consortium)
+
+  + WMS / WMTS: retourne une image (PNG, JPG, ...)
+  + WFS / OGC API Features: retourne du texte (GeoJSON, GML, ...)
+
+.. image:: images/wms_wfs.png
+    :class: centered
+    :width: 1000
+
