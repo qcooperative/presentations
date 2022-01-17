@@ -86,7 +86,7 @@ Quoi?
 
 + Serveur de cartographie: c'est pas si compliqué
 + QGIS Server: simple ou pas simple?
-+ Stack de déploiement: exemple
++ Stack de déploiement: ???
 
 .. image:: images/compass.jpg
     :class: centered
@@ -94,8 +94,8 @@ Quoi?
 
 -----
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 :data-transition-duration: 0
 
@@ -107,8 +107,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 .. image:: images/mapserver_distrib.png
     :class: centered
@@ -118,8 +118,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 .. image:: images/mapserver_update.png
     :class: centered
@@ -129,8 +129,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 .. image:: images/mapserver_interop.png
     :class: centered
@@ -140,8 +140,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 .. image:: images/mapserver_full.png
     :class: centered
@@ -149,8 +149,8 @@ Serveur de cartographie
 
 -----
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: c'est pas si compliqué
+===============================================
 
 + Standards OGC (Open Geospatial Consortium)
 
@@ -163,8 +163,8 @@ Serveur de cartographie
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + Un serveur de cartographie
 
@@ -175,8 +175,8 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + Ses camarades open-source
 
@@ -194,10 +194,11 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + WYSIWYG (What You See Is What You Get)
++ Le projet .qgs/.qgz est LE fichier de configuration
 
 .. image:: images/config.png
     :class: centered
@@ -205,8 +206,8 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + Capacité à personaliser les rendus
 
@@ -218,8 +219,8 @@ TODO
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + Extensions aux services et paramètres standards OGC
 + Exemple: ``GetPrint``
@@ -229,8 +230,8 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: simple ou pas simple?
+==================================
 
 + De nombreuses solutions clientes sur étagère
 
@@ -240,4 +241,80 @@ QGIS Server
 
 TODO
 
+-----
 
+Déploiement: une stack simple
+=============================
+
++ Conteneurisation
+
+  + Solution simple de déploiement
+  + De nombreuses images Docker disponibles pour QGIS Server
+  + https://hub.docker.com/r/openquake/qgis-server
+  + ``docker run -p 8010:80 openquake/qgis-server:ltr``
+
++ Orchestration
+
+  + Applications multi-conteneurs / multi-hôtes (cluster)
+  + Maintenance, passage à l'échelle (scaling), ...
+  + Swarm, Kubernetes, ...
+  + Pour des besoins simples: ``docker-compose``
+
+-----
+
+Déploiement: une stack simple
+=============================
+
++ Équilibrage de charge
+
+  + Beaucoup de clients -> plusieurs serveurs (scaling)
+  + Comment distribuer les requêtes aux serveurs innocupés? -> Load-Balancer
+  + NGINX (Docker image)
+
+.. image:: images/loadbalancer.png
+    :class: centered
+    :width: 1000
+
+-----
+
+Déploiement: une stack simple
+=============================
+
++ Cache?
+
+  + Ne pas activer le moteur de rendu plusieurs pour la même chose
+  + WMS: retourne une image sauvée sur le disque
+  + Map-Proxy (Docker image)
+
+.. image:: images/mapproxy.png
+    :class: centered
+    :width: 1000
+
+-----
+
+Déploiement: une stack simple
+=============================
+
++ Pour résumer
+
+  + Composition de conteneurs Dockers avec ``docker-compose``
+  + Client -> ``MapProxy`` (cache) -> ``NGINX`` (load-balancer) -> N ``QGIS Server`` (scaling)
+  + https://github.com/pblottiere/qgis-server-stack (avec ``mviewer`` en client web)
+
+|
+
+.. class:: centered
+
+  ``$ docker-compose up --scale qgisserver=2 -d``
+
+-----
+
+Déploiement: une stack simple
+=============================
+
++ Scaling: ``qgis-server-stack-qgisserver-1`` et ``qgis-server-stack-qgisserver-2``
++ Cache: ``mapproxy/cache_data/countries_cache_EPSG3857``
+
+.. image:: images/mviewer.png
+    :class: centered
+    :width: 1000
