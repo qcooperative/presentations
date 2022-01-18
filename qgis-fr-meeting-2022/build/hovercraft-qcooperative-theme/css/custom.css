@@ -1,0 +1,25 @@
+
+body {
+    font-size: 150%;
+}
+
+em {
+    color: maroon;
+    font-weight: bold;
+}
+
+.header img {
+    width: 6%;
+}
+
+.footer {
+	position: fixed;
+	bottom: 1%;
+    font-size: 60%;
+    color: darkgrey;
+}
+
+pre {
+    font-size: 140%;
+    font-weight: bold;
+}
