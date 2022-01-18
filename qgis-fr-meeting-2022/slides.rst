@@ -13,18 +13,31 @@
 
 :id: presentation-title
 
-QGIS Server, le choix de la simplicité?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+QGIS Server, le choix de la simplicité(?)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Paul Blottiere
 
-QCooperative / Hytech-Imaging
+Hytech-Imaging / QCooperative
 
 18-01-2022
 
 .. image:: images/qgis.png
     :class: centered
     :width: 400
+
+----
+
+Quoi?
+=====
+
++ Serveur de cartographie: concepts simplifiés
++ QGIS Server: ses atouts sur la simplicité de configuration
++ Déploiement: terminologie et exemple "simple" d'une stack complète
+
+.. image:: images/compass.jpg
+    :class: centered
+    :width: 500
 
 ----
 
@@ -83,23 +96,10 @@ Hytech-Imaging
 
    |twitter| `@HytechImaging <https://twitter.com/HytechImaging>`_
 
-----
-
-Quoi?
-=====
-
-+ Serveur de cartographie
-+ QGIS Server
-+ Déploiement
-
-.. image:: images/compass.jpg
-    :class: centered
-    :width: 500
-
 -----
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: 101
+============================
 
 :data-transition-duration: 0
 
@@ -111,8 +111,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: 101
+============================
 
 .. image:: images/mapserver_distrib.png
     :class: centered
@@ -122,8 +122,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: 101
+============================
 
 .. image:: images/mapserver_update.png
     :class: centered
@@ -133,8 +133,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: 101
+============================
 
 .. image:: images/mapserver_interop.png
     :class: centered
@@ -144,8 +144,8 @@ Serveur de cartographie
 
 :data-transition-duration: 0
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: 101
+============================
 
 .. image:: images/mapserver_full.png
     :class: centered
@@ -153,8 +153,8 @@ Serveur de cartographie
 
 -----
 
-Serveur de cartographie
-=======================
+Serveur de cartographie: standards OGC
+======================================
 
 + Standards OGC (Open Geospatial Consortium)
 
@@ -177,8 +177,8 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: écosystème
+=======================
 
 + Ses camarades open-source
 
@@ -196,8 +196,8 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: WYSIWYG
+====================
 
 + Simplicité de configuration
 
@@ -210,19 +210,24 @@ QGIS Server
 
 -----
 
-QGIS Server
-===========
+QGIS Server: Plugins
+====================
 
 + Simplicité de personalisation
 
   + Plugins Python (PyQGIS)
   + https://plugins.qgis.org/plugins/server/
-  + https://docs.qgis.org/3.16/fr/docs/pyqgis_developer_cookbook/server.html
+
+|
+
+.. class:: centered
+
+  https://docs.qgis.org/3.16/fr/docs/pyqgis_developer_cookbook/server.html
 
 -----
 
-QGIS Server
-===========
+QGIS Server: Extensions
+=======================
 
 + De nombreuses extensions aux services et paramètres standards OGC
 + Exemple: ``GetPrint``
@@ -230,10 +235,16 @@ QGIS Server
   + Génération de rapport (PDF, JPG, ...)
   + Basé sur le layout manager de QGIS Desktop (encore du WYSIWYG)
 
+|
+
+.. class:: centered
+
+   -> *pas besoin de composants supplémentaires*
+
 -----
 
-QGIS Server
-===========
+QGIS Server: clients
+====================
 
 + De nombreuses solutions clientes sur étagère
 
@@ -349,3 +360,24 @@ Déploiement
 .. image:: images/mviewer.png
     :class: centered
     :width: 1000
+
+-----
+
+Conclusions
+===========
+
++ Concepts assez palpables
+
+  + QGIS Server: ses atouts pour la simplicité de configuration
+  + Déploiement de QGIS Server: exemple "simple" d'une stack complète
+
++ Mais pas si simple en production...
+
+  + Si projet complexe (performance en cas de nombreuses couches, ...)
+  + Si déploiement/maintenance sur clusters
+
+-----
+
+.. class:: chapter
+
+   Merci
