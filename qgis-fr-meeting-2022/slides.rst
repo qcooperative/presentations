@@ -192,7 +192,7 @@ QGIS Server: écosystème
 
 + QGIS Server est-il *"plus simple"*?
 
-  + Oui sur certains apsects
+  + Oui sur certains aspects
 
 -----
 
